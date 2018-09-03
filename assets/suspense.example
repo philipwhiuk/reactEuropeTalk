@@ -1,0 +1,29 @@
+const getData = createResource(async => {
+   const res = await fetch("url");
+   return await res.json();
+});
+
+import {SimpleCache} from 'simple-cache-provider';
+const MyComponent = () => {
+   <SimpleCache.Consumer>
+    { cache => {
+       const data = getData.read(cache);
+       return <App data={data} />
+    }
+  </SimpleCache.Consumer>
+}
+
+<Loader>
+ <MyComponent />
+</Loader>
+
+const Loader = props => {
+   return <Timeout ms={500}>
+   {
+     didTimeout => {
+       return didTimeout ? <Loading />
+          : props.children
+     }
+   }
+   </Timeout>
+}

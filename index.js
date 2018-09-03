@@ -6,6 +6,9 @@ import Redbox from "redbox-react";
 
 import Presentation from "./presentation";
 
+import "./assets/prism.js";
+import "./assets/prism.css";
+
 const CustomErrorReporter = ({ error }) => <Redbox error={ error } />;
 
 CustomErrorReporter.propTypes = {
@@ -21,7 +24,8 @@ ReactDOM.render(
 
 if (module.hot) {
   module.hot.accept("./presentation", () => {
-    const NextPresentation = require("./presentation").default;    ReactDOM.render(
+    const NextPresentation = require("./presentation").default;
+    ReactDOM.render(
       <AppContainer errorReporter={CustomErrorReporter}>
         <NextPresentation />
       </AppContainer>,

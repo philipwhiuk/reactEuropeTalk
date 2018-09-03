@@ -49,6 +49,12 @@ module.exports = {
       test: /\.jpg$/,
       loader: "url-loader?mimetype=image/jpg",
       include: path.join(__dirname, "assets")
+    }, {
+        test: /\.(mp4)$/,
+        loader: 'file-loader'
+    }, {
+        test: [/\.txt$/, /\.md$/, /\.example$/],
+        use: 'raw-loader',
     }]
   }
 };
