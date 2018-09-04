@@ -42,6 +42,12 @@ module.exports = {
     }, {
       test: /\.svg$/,
       loader: "url-loader?limit=10000&mimetype=image/svg+xml"
+    }, {
+      test: /\.(mp4)$/,
+      loader: 'file-loader'
+    }, {
+      test: [/\.txt$/, /\.md$/, /\.example$/],
+      use: 'raw-loader',
     }]
   }
 };
