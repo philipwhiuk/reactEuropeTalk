@@ -1,18 +1,11 @@
-# Spectacle Boilerplate
+# React Europe Talk
 
-## Contents
+This repository contains the source for a React Europe talk I gave at work.
 
-- [Reference](#reference)
-- [Getting Started](#getting-started)
-- [Build & Deployment](#build-deployment)
+It's based off the "Spectacle Boilerplate" repository with content (and some code fixes) from Josh Comeau, cut-down versions of Ken Wheeler's keynote and liberal usage of the `spectacle-code-slide` dependency. Many thanks to both of them for both the original presentations and ideas and code samples.
 
-## Reference
+# Building
 
-The Spectacle core API is available at [https://github.com/FormidableLabs/spectacle/blob/master/README.md](https://github.com/FormidableLabs/spectacle/blob/master/README.md).
-
-## Getting Started
-
-After downloading the boilerplate, your first order of business is to open a terminal and run 
 ```bash
 yarn
 ```
@@ -21,12 +14,6 @@ or
 npm install
 ```
 if you're about that life.
-
-Next, run 
-```bash
-rm -R .git
-```
-to remove the existing version control.
 
 Then, to start up the local server, run
 ```bash
@@ -46,3 +33,5 @@ If you want to deploy the slideshow to surge, run
 ```bash
 npm run deploy
 ```
+
+Using surge is by far the easiest method of getting it to work.
