@@ -8,7 +8,7 @@ import {
     Slide,
     Text, Image
 } from "spectacle";
-import CodeSlide from "spectacle-code-slide";
+import CodeSlide from "@philipwhiuk/spectacle-code-slide";
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
