@@ -1,5 +1,7 @@
 # React Europe Talk
 
+NB: This project currently has known vulnerable dependencies. It needs updating but isn't currently top of my priority list - use with caution.
+
 This repository contains the source for a React Europe talk I gave at work.
 
 It's based off the "Spectacle Boilerplate" repository with content (and some code fixes) from Josh Comeau, cut-down versions of Ken Wheeler's keynote and liberal usage of the `spectacle-code-slide` dependency. Many thanks to both of them for both the original presentations and ideas and code samples.
